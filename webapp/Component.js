@@ -1,6 +1,7 @@
 sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
+   "sap/ui/model/resource/ResourceModel",
 	"sap/ui/demo/wt/controller/HelloDialog"
 ], function (UIComponent, JSONModel, HelloDialog) {
    "use strict";
@@ -21,7 +22,7 @@ sap.ui.define([
          var oModel = new JSONModel(oData);
          this.setModel(oModel);
          
-		// set dialog helper
+		// set dialog
 		this._helloDialog = new HelloDialog(this.getAggregation("rootControl"));         
 	},
 
