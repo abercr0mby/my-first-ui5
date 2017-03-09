@@ -9,8 +9,13 @@ sap.ui.define([
 		onOpenDialog : function () {
 			this.getOwnerComponent().openHelloDialog();
 <<<<<<< master
+<<<<<<< master
 		}
 >>>>>>> branch 'master' of https://github.com/abercr0mby/my-first-ui5
+=======
+		}   	
+   	
+>>>>>>> 21a861f Added list view of invoices
 =======
 		}   	
    	

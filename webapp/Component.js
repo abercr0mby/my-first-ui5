@@ -2,10 +2,14 @@ sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
 <<<<<<< master
+<<<<<<< master
 <<<<<<< HEAD
    "sap/ui/model/resource/ResourceModel"
 ], function (UIComponent, JSONModel) {
 =======
+=======
+   "sap/ui/model/resource/ResourceModel",
+>>>>>>> 21a861f Added list view of invoices
 =======
    "sap/ui/model/resource/ResourceModel",
 >>>>>>> 21a861f Added list view of invoices
