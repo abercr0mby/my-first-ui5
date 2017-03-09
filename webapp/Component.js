@@ -1,10 +1,14 @@
 sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
+<<<<<<< master
 <<<<<<< HEAD
    "sap/ui/model/resource/ResourceModel"
 ], function (UIComponent, JSONModel) {
 =======
+=======
+   "sap/ui/model/resource/ResourceModel",
+>>>>>>> 21a861f Added list view of invoices
 	"sap/ui/demo/wt/controller/HelloDialog"
 ], function (UIComponent, JSONModel, HelloDialog) {
 >>>>>>> branch 'master' of https://github.com/abercr0mby/my-first-ui5
@@ -28,7 +32,7 @@ sap.ui.define([
 <<<<<<< HEAD
 =======
          
-		// set dialog helper
+		// set dialog
 		this._helloDialog = new HelloDialog(this.getAggregation("rootControl"));         
 	},
 
