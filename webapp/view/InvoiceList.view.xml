@@ -2,11 +2,22 @@
    controllerName="sap.ui.demo.wt.controller.InvoiceList"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
-   <List
+	
+   <List 
+	  id="invoiceList"
       headerText="{i18n>invoiceListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
       items="{invoice>/Invoices}" >
+   	
+      <headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>invoiceListTitle}"/>
+            <ToolbarSpacer/>
+            <SearchField width="50%" search="onFilterInvoices" selectOnFocus="false"/>
+         </Toolbar>
+      </headerToolbar>   	
+   	
       <items>
          <ObjectListItem
             title="{invoice>Quantity} x {invoice>ProductName}"
@@ -20,5 +31,7 @@
 		numberUnit="{view>/currency}"
 		numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
       </items>
+      
    </List>
+   
 </mvc:View>
