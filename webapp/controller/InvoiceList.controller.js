@@ -2,12 +2,14 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
 	"sap/ui/model/Filter",
-	"sap/ui/model/FilterOperator"
-], function (Controller, JSONModel, Filter, FilterOperator) {
+	"sap/ui/model/FilterOperator",
+	"sap/ui/demo/wt/model/formatter"
+], function (Controller, JSONModel, Filter, FilterOperator, formatter) {
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.wt.controller.InvoiceList", {
-
+		formatter: formatter,
+		
 		onInit : function () {
 			var oViewModel = new JSONModel({
 				currency: "EUR"
