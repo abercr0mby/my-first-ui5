@@ -24,6 +24,12 @@ sap.ui.define([
 				oDialog = sap.ui.xmlfragment(oView.getId(), "sap.ui.demo.wt.view.HelloDialog", oFragmentController);
 				// connect dialog to the root view of this component (models, lifecycle)
 				oView.addDependent(oDialog);
+            	
+            	// forward compact/cozy style into dialog
+				// The "Hello World" dialog is not part of the app view but opened in a special part of the DOM called 
+				//"static area". The content density class defined on the app view is not known to the dialog so we sync 
+				// the style class of the app with the dialog manually.            	
+            	jQuery.sap.syncStyleClass(oView.getController().getOwnerComponent().getContentDensityClass(), oView, oDialog);				
 			}
 			oDialog.open();
 		}
